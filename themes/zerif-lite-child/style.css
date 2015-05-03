@@ -1,0 +1,92 @@
+/*
+Theme Name: Zerif-Lite Child
+Description: Child theme for Zerif-Lite theme
+Author: Jeffrey
+Template: zerif-lite
+*/
+
+/* write custom css */
+
+.custom-button {
+
+	display: inline-block !important;
+
+	text-align: center;
+
+	text-transform: uppercase;
+
+	padding: 13px 35px 13px 35px;
+
+	border-radius: 4px;
+
+	margin: 10px;
+
+	border: none;
+
+}
+
+.red-btn {
+
+	background: #e96656;
+
+}
+
+.green-btn {
+
+	background: #20AA73;
+
+}
+
+.blue-btn {
+
+	background: #3ab0e2;
+
+}
+
+.yellow-btn {
+
+	background: #E7AC44;
+
+}
+
+.red-btn,.green-btn,.blue-btn,.yellow-btn {
+
+	color: #FFF;
+
+	-webkit-transition: all 0.3s ease-in-out;
+
+	transition: all 0.3s ease-in-out;
+
+}
+
+.blue-btn:hover {
+
+	color: #FFF;
+
+	background: #1288b9;
+
+}
+
+.red-btn:hover {
+
+	color: #FFF;
+
+	background: #cb4332;
+
+}
+
+.green-btn:hover {
+
+	color: #FFF;
+
+	background: #069059;
+
+}
+
+.yellow-btn:hover {
+
+	color: #FFF;
+
+	background: #d8951e;
+
+}
