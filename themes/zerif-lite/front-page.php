@@ -302,13 +302,6 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 <?php
 
-	/* OUR FOCUS SECTION */
-
-	$zerif_ourfocus_show = get_theme_mod('zerif_ourfocus_show');
-
-	if( isset($zerif_ourfocus_show) && $zerif_ourfocus_show != 1 ):
-		include get_template_directory() . "/sections/our_focus.php";
-	endif;
 
 
 	/* RIBBON WITH BOTTOM BUTTON */
@@ -317,6 +310,16 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	include get_template_directory() . "/sections/ribbon_with_bottom_button.php";
 
 
+
+
+	/* TESTIMONIALS */
+
+	$zerif_testimonials_show = get_theme_mod('zerif_testimonials_show');
+
+	if( isset($zerif_testimonials_show) && $zerif_testimonials_show != 1 ):
+
+		include get_template_directory() . "/sections/testimonials.php";
+	endif;
 
 
 
@@ -332,6 +335,16 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	endif;
 
 
+	/* OUR FOCUS SECTION */
+
+	$zerif_ourfocus_show = get_theme_mod('zerif_ourfocus_show');
+
+	if( isset($zerif_ourfocus_show) && $zerif_ourfocus_show != 1 ):
+		include get_template_directory() . "/sections/our_focus.php";
+	endif;
+
+
+
 	/* OUR TEAM */
 
 	$zerif_ourteam_show = get_theme_mod('zerif_ourteam_show');
@@ -339,16 +352,6 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	if( isset($zerif_ourteam_show) && $zerif_ourteam_show != 1 ):
 
 		include get_template_directory() . "/sections/our_team.php";
-	endif;
-
-
-	/* TESTIMONIALS */
-
-	$zerif_testimonials_show = get_theme_mod('zerif_testimonials_show');
-
-	if( isset($zerif_testimonials_show) && $zerif_testimonials_show != 1 ):
-
-		include get_template_directory() . "/sections/testimonials.php";
 	endif;
 
 
