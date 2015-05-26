@@ -6,3 +6,228 @@ Template: moesia
 */
 
 /* write custom css */
+
+
+/*----------------------------------*
+ *									*
+ *		Navigation 					*
+ *									*
+ *----------------------------------*/
+
+#site-navigation {
+	padding-top: 25px;
+	font-size: 16px;
+}
+
+#site-navigation .current-menu-item a{
+	border-bottom: 3px solid #DE3049;
+	color: #DE3049;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+#site-navigation .menu-item a:hover {
+	text-decoration: none;
+	color: #DE3049;
+}
+
+@media screen and (max-width: 992px) {
+	#site-navigation .current-menu-item a {
+		border-bottom: none;
+	}
+
+}
+
+.menu-toggle {
+	background: none;
+	color: #ebebeb !important;
+	font-size: 20px;
+}
+
+.menu-toggle:hover {
+	color: #DE3049;
+}
+
+
+/* Icon 1 */
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 8px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 16px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+/*----------------------------------*
+ *									*
+ *		Header	 					*
+ *									*
+ *----------------------------------*/
+
+#welcome-info-custom {
+
+	top: 45%;
+
+}
+
+#welcome-title-custom {
+
+	font-size: 80px;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	text-shadow: none !important;
+	font-weight: 700;
+	margin-bottom: 30px;
+	line-height: 1.2;
+
+}
+
+#welcome-button-custom {
+	box-shadow: none;
+	border-radius: 1px;
+	font-family: 'Lato';
+	letter-spacing: 1px;
+}
+
+
+.widget-title:after {
+	border-bottom: none !important;
+}
+
+
+
+/*--------------------------------------------------------------
+Responsive
+--------------------------------------------------------------*/
+@media only screen and (max-width: 991px) {
+	#welcome-info-custom {
+		top: 45%;
+	}
+	#welcome-title-custom {
+		font-size: 60px;
+	}
+}
+@media only screen and (max-width: 767px) {
+
+	#welcome-title-custom {
+		font-size: 50px;
+	}
+
+}
+@media only screen and (max-width: 600px) {
+	#welcome-button-custom {
+		display: inline-block;
+		width: 40%;
+	}
+	#welcome-info-custom {
+		top: 30%;
+	}
+	#welcome-title-custom {
+		font-size: 40px;
+	}
+}
+@media only screen and (max-width: 499px) {
+	.project,
+	.service,
+	.employee,
+	.bq-text,
+	.bq-img {
+		width: 100% !important;		
+	}
+	.project img {
+		display: block;
+		margin: 0 auto;
+	}
+	section .widget-title {
+		font-size: 36px;
+	}
+	#welcome-title-custom {
+		font-size: 24px;
+	}
+	#welcome-button-custom {
+		width: 50%;
+		margin-top:0px;
+	}
+}
+@media only screen and (max-width: 480px) {
+
+	#site-branding-custom {
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+
+	#welcome-info-custom {
+		top: 20%;
+	}
+
+	#welcome-title-custom {
+		margin-bottom: 25px;
+	}
+
+	#welcome-button-custom {
+		margin-top: 0px;	
+	}
+
+
+}

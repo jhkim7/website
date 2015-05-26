@@ -280,7 +280,7 @@ if ( ! function_exists( 'maskitto_light_generate_css' ) ) :
 
 					.page-404, .btn-danger, .section-title-line, .blog-category, header .navbar-nav .dropdown.open .current-menu-item, .widget-area-2 .widget_search, .widget-area-2 .search-field, #wp-calendar #today,
 					.blog-layout-2 #submit, .blog-layout-2 .comments-title, .wpcf7-submit, .portfolio-categories-container .portfolio-categories li.active a, .portfolio-categories-container .portfolio-categories li.active:hover a,
-					.page-section-slogan .slogan-title, .testimonials-item, .back-top:hover {
+					.page-section-slogan .slogan-title, .testimonials-item, .back-top:hover, header .navbar-nav .dropdown .dropdown-menu .active {
 						background-color: <?php echo esc_attr($maskitto_light['primary-color']); ?>!important;
 					}
 
@@ -404,7 +404,7 @@ if ( ! function_exists( 'maskitto_light_generate_css' ) ) :
 					/* New buttons */
 
 					.slide-details .btn-danger,
-					.slide-details .btn-white {
+					.slide-details .btn-white, {
 						font-weight: bold;
 						padding: 17px 28px 15px 28px;
 					}
@@ -413,7 +413,8 @@ if ( ! function_exists( 'maskitto_light_generate_css' ) ) :
 						padding: 15px 28px 13px 28px;
 					}
 
-					#wrapper .page-list .btn-default {
+					#wrapper .page-list .btn-default,
+					#wrapper .page-blog .btn-default {
 						border: 2px solid #8b8b8b;
 						border-width: 2px!important;
 						font-weight: bold;

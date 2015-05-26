@@ -19,9 +19,9 @@ msgid "%1$s at %2$s"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/archive.php:58
 #: maskitto-light/single.php:43
 #: maskitto-light/index.php:55
+#: maskitto-light/archive.php:58
 msgid "(more)"
 msgstr ""
 
@@ -46,8 +46,9 @@ msgid "12 items"
 msgstr ""
 
 #. Text in echo
+#: maskitto-light/inc/widgets/sh-testimonials.php:241
 #: maskitto-light/inc/widgets/sh-services.php:194
-#: maskitto-light/inc/widgets/sh-testimonials.php:237
+#: maskitto-light/inc/widgets/sh-blog.php:112
 msgid "3 items"
 msgstr ""
 
@@ -57,8 +58,9 @@ msgid "4 items"
 msgstr ""
 
 #. Text in echo
+#: maskitto-light/inc/widgets/sh-testimonials.php:242
 #: maskitto-light/inc/widgets/sh-services.php:195
-#: maskitto-light/inc/widgets/sh-testimonials.php:238
+#: maskitto-light/inc/widgets/sh-blog.php:113
 msgid "6 items"
 msgstr ""
 
@@ -68,8 +70,9 @@ msgid "8 items"
 msgstr ""
 
 #. Text in echo
+#: maskitto-light/inc/widgets/sh-testimonials.php:243
 #: maskitto-light/inc/widgets/sh-services.php:196
-#: maskitto-light/inc/widgets/sh-testimonials.php:239
+#: maskitto-light/inc/widgets/sh-blog.php:114
 msgid "9 items"
 msgstr ""
 
@@ -89,10 +92,10 @@ msgid "Add white spaces between images"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/archive.php:31
-#: maskitto-light/single.php:16
 #: maskitto-light/inc/widgets/sh-portfolio.php:51
+#: maskitto-light/single.php:16
 #: maskitto-light/index.php:32
+#: maskitto-light/archive.php:31
 msgid "All"
 msgstr ""
 
@@ -134,11 +137,11 @@ msgid "Comments are closed."
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-slider.php:203
+#: maskitto-light/inc/widgets/sh-testimonials.php:197
 #: maskitto-light/inc/widgets/sh-portfolio.php:138
 #: maskitto-light/inc/widgets/sh-services.php:140
+#: maskitto-light/inc/widgets/sh-slider.php:203
 #: maskitto-light/inc/widgets/sh-partners.php:94
-#: maskitto-light/inc/widgets/sh-testimonials.php:193
 msgid "Content"
 msgstr ""
 
@@ -244,11 +247,6 @@ msgid "Include other page. Only for page builder."
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/template-tags.php:732
-msgid "Information"
-msgstr ""
-
-#. Text in echo
 #: maskitto-light/inc/widgets/sh-counter.php:162
 msgid "Inner top padding"
 msgstr ""
@@ -284,14 +282,15 @@ msgid "Leave a comment"
 msgstr ""
 
 #. Text in echo
+#: maskitto-light/inc/widgets/sh-testimonials.php:237
 #: maskitto-light/inc/widgets/sh-portfolio.php:178
 #: maskitto-light/inc/widgets/sh-services.php:190
-#: maskitto-light/inc/widgets/sh-testimonials.php:233
+#: maskitto-light/inc/widgets/sh-blog.php:107
 msgid "Limit items"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-blog.php:47
+#: maskitto-light/inc/widgets/sh-blog.php:53
 msgid "Load more"
 msgstr ""
 
@@ -316,7 +315,7 @@ msgid "Manage slider content"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-testimonials.php:199
+#: maskitto-light/inc/widgets/sh-testimonials.php:203
 msgid "Manage testimonials content"
 msgstr ""
 
@@ -397,13 +396,13 @@ msgid "Nothing Found"
 msgstr ""
 
 #. Text in function
+#: maskitto-light/inc/widgets/sh-testimonials.php:1
+#: maskitto-light/inc/widgets/sh-portfolio.php:1
+#: maskitto-light/inc/widgets/sh-counter.php:1
+#: maskitto-light/inc/widgets/sh-services.php:1
 #: maskitto-light/inc/widgets/sh-slogan.php:1
 #: maskitto-light/inc/widgets/sh-slider.php:1
-#: maskitto-light/inc/widgets/sh-counter.php:1
-#: maskitto-light/inc/widgets/sh-portfolio.php:1
-#: maskitto-light/inc/widgets/sh-services.php:1
 #: maskitto-light/inc/widgets/sh-partners.php:1
-#: maskitto-light/inc/widgets/sh-testimonials.php:1
 msgid "Only for page builder."
 msgstr ""
 
@@ -418,11 +417,11 @@ msgid "Please assign your widgets here"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-slider.php:212
+#: maskitto-light/inc/widgets/sh-testimonials.php:206
 #: maskitto-light/inc/widgets/sh-portfolio.php:147
 #: maskitto-light/inc/widgets/sh-services.php:149
+#: maskitto-light/inc/widgets/sh-slider.php:212
 #: maskitto-light/inc/widgets/sh-partners.php:103
-#: maskitto-light/inc/widgets/sh-testimonials.php:202
 msgid "Please import <i>Types</i> plugin XML file from our documentation to access this option."
 msgstr ""
 
@@ -442,10 +441,10 @@ msgid "Posts navigation"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/template-tags.php:759
 #: maskitto-light/content.php:117
-#: maskitto-light/inc/widgets/sh-services.php:85
 #: maskitto-light/inc/widgets/sh-testimonials.php:142
+#: maskitto-light/inc/template-tags.php:771
+#: maskitto-light/inc/widgets/sh-services.php:85
 msgid "Read more"
 msgstr ""
 
@@ -475,18 +474,23 @@ msgid "Section via hook"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-slider.php:234
+#: maskitto-light/inc/widgets/sh-blog.php:111
+msgid "Select limit"
+msgstr ""
+
+#. Text in echo
+#: maskitto-light/inc/widgets/sh-testimonials.php:265
 #: maskitto-light/inc/widgets/sh-portfolio.php:227
 #: maskitto-light/inc/widgets/sh-services.php:218
-#: maskitto-light/inc/widgets/sh-testimonials.php:261
+#: maskitto-light/inc/widgets/sh-slider.php:234
 msgid "Select widget group"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-slider.php:226
+#: maskitto-light/inc/widgets/sh-testimonials.php:257
 #: maskitto-light/inc/widgets/sh-portfolio.php:219
 #: maskitto-light/inc/widgets/sh-services.php:210
-#: maskitto-light/inc/widgets/sh-testimonials.php:253
+#: maskitto-light/inc/widgets/sh-slider.php:226
 msgid "Show all"
 msgstr ""
 
@@ -511,11 +515,11 @@ msgid "Sorry, but nothing matched your search terms. Please try again with some 
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-blog.php:85
+#: maskitto-light/inc/widgets/sh-testimonials.php:226
 #: maskitto-light/inc/widgets/sh-portfolio.php:167
 #: maskitto-light/inc/widgets/sh-services.php:169
 #: maskitto-light/inc/widgets/sh-partners.php:123
-#: maskitto-light/inc/widgets/sh-testimonials.php:222
+#: maskitto-light/inc/widgets/sh-blog.php:96
 msgid "Subitle"
 msgstr ""
 
@@ -546,21 +550,21 @@ msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-blog.php:89
+#: maskitto-light/inc/widgets/sh-testimonials.php:245
 #: maskitto-light/inc/widgets/sh-portfolio.php:187
 #: maskitto-light/inc/widgets/sh-services.php:198
 #: maskitto-light/inc/widgets/sh-partners.php:127
-#: maskitto-light/inc/widgets/sh-testimonials.php:241
+#: maskitto-light/inc/widgets/sh-blog.php:116
 msgid "This field is optional"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-slogan.php:49
-#: maskitto-light/inc/widgets/sh-blog.php:74
+#: maskitto-light/inc/widgets/sh-testimonials.php:215
 #: maskitto-light/inc/widgets/sh-portfolio.php:156
 #: maskitto-light/inc/widgets/sh-services.php:158
+#: maskitto-light/inc/widgets/sh-slogan.php:49
 #: maskitto-light/inc/widgets/sh-partners.php:112
-#: maskitto-light/inc/widgets/sh-testimonials.php:211
+#: maskitto-light/inc/widgets/sh-blog.php:85
 msgid "Title"
 msgstr ""
 
@@ -580,11 +584,11 @@ msgid "White spaces"
 msgstr ""
 
 #. Text in echo
-#: maskitto-light/inc/widgets/sh-slider.php:221
+#: maskitto-light/inc/widgets/sh-testimonials.php:252
 #: maskitto-light/inc/widgets/sh-portfolio.php:214
 #: maskitto-light/inc/widgets/sh-services.php:205
+#: maskitto-light/inc/widgets/sh-slider.php:221
 #: maskitto-light/inc/widgets/sh-partners.php:134
-#: maskitto-light/inc/widgets/sh-testimonials.php:248
 msgid "Widget group"
 msgstr ""
 

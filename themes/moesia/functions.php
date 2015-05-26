@@ -311,7 +311,7 @@ function moesia_nav_bar() {
 					echo '</h2>';
 				endif;
 			echo '</div>';
-			echo '<button class="menu-toggle btn"><i class="fa fa-bars"></i></button>
+			echo '<button class="menu-toggle"><i class="fa fa-bars"></i></button>
 				<nav id="site-navigation" class="main-navigation col-md-8" role="navigation">';
 				wp_nav_menu( array( 'theme_location' => 'primary' ) );
 			echo '</nav>';

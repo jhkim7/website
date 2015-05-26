@@ -659,6 +659,7 @@ class BWGViewSlideshow {
                   
                   $is_embed = preg_match('/EMBED/',$image_row->filetype)==1 ? true :false;
                   $is_embed_video = ($is_embed && preg_match('/_VIDEO/',$image_row->filetype)==1) ? true :false;
+                  $is_embed_instagram_post = preg_match('/INSTAGRAM_POST/',$image_row->filetype)==1 ? true :false;
                   if ($image_row->id == $current_image_id) {
                     $current_key = $key;
                     ?>
@@ -707,11 +708,11 @@ class BWGViewSlideshow {
                           <?php 
                             if (! $is_embed) {
                             ?>
-                            <img id="bwg_slideshow_image_second_<?php echo $bwg; ?>" class="bwg_slideshow_image_<?php echo $bwg; ?>" src="<?php echo site_url() . '/' . $WD_BWG_UPLOAD_DIR . $image_row->image_url; ?>" alt="<?php echo $image_row->alt; ?>"/>
+                            <img class="bwg_slideshow_image_<?php echo $bwg; ?>" src="<?php echo site_url() . '/' . $WD_BWG_UPLOAD_DIR . $image_row->image_url; ?>" alt="<?php echo $image_row->alt; ?>"/>
                           <?php 
                             }
                             else {   /*$is_embed*/ ?>
-                            <span id="bwg_slideshow_image_second_<?php echo $bwg; ?>" class="bwg_slideshow_embed_<?php echo $bwg; ?>">
+                            <span class="bwg_slideshow_embed_<?php echo $bwg; ?>">
                                 <?php
                               if($is_embed_instagram_post){
                                 $post_width = $image_width - ($filmstrip_direction == 'vertical' ? $slideshow_filmstrip_width : 0);
@@ -1452,6 +1453,8 @@ class BWGViewSlideshow {
             document.getElementById("bwg_audio_<?php echo $bwg; ?>").play();
           }
         }
+        jQuery(".bwg_slideshow_image_<?php echo $bwg; ?>").removeAttr("width");
+        jQuery(".bwg_slideshow_image_<?php echo $bwg; ?>").removeAttr("height");
       });
 
 

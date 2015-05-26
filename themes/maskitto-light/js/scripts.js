@@ -211,4 +211,12 @@ jQuery( document ).ready(function( $ ) {
 	}
 	
 
+	/* Fix for partners widget */
+
+	$( '.partner-item a' ).on( 'click', function() {
+		if( $(this).attr( 'href' ) == '#' ) {
+			return false;
+		}
+	});
+
 });

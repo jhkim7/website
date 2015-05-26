@@ -123,7 +123,7 @@ if (!class_exists('maskitto_light_Redux_Framework_config')) {
 
          * */
         function change_arguments($args) {
-            //$args['dev_mode'] = false;
+            $args['dev_mode'] = false;
 
             return $args;
         }

@@ -1,10 +1,10 @@
 === Photo Gallery ===
 Contributors: webdorado
 Donate link: http://web-dorado.com/products/wordpress-photo-gallery-plugin.html
-Tags: photo, photo gallery, image gallery, video gallery, gallery, galleries,  wordpress gallery plugin, images gallery, album, photo albums, simple gallery, best gallery plugin, free photo gallery, wp gallery, wordpress gallery, website gallery, gallery shortcode, best gallery, picture, pictures, gallery slider, photo album, photogallery, widget gallery, image, images, photos,  gallery lightbox, photoset, wordpress photo gallery plugin, wp gallery plugins, responsive wordpress photo gallery, media, image album, filterable gallery, banner rotator, fullscreen gallery, fotogalerie, galleria, galerie, galeri, responsive gallery, add album,  add gallery, add pictures, fotoalbum, foto, gallery decription, multiple pictures, photoalbum, upload images, upload photos, view images, view pictures, admin, AJAX, comments, gallery image, image lightbox, image rotate, image slideshow, image slider, jquery, jquery gallery, slide show, slideshow, thumbnail, thumbnail view, thumbnails, thumbs, responsive, watermarking, watermarks,fullscreen slider, lightbox, photography, sidebar, slide, youtube, vimeo, videos  
+Tags: photo, photo gallery, image gallery, video gallery, gallery, galleries,  wordpress gallery plugin, images gallery, album, photo albums, simple gallery, best gallery plugin, free photo gallery, wp gallery, wordpress gallery, website gallery, gallery shortcode, best gallery, picture, pictures, gallery slider, photo album, photogallery, widget gallery, image, images, photos,  gallery lightbox, photoset, wordpress photo gallery plugin, wp gallery plugins, responsive wordpress photo gallery, media, image album, filterable gallery, banner rotator, fullscreen gallery, fotogalerie, galleria, galerie, galeri, responsive gallery, add album,  add gallery, add pictures, fotoalbum, foto, gallery decription, multiple pictures, photoalbum, upload images, upload photos, view images, view pictures, admin, AJAX, comments, gallery image, image lightbox, image rotate, image slideshow, image slider, jquery, jquery gallery, slide show, slideshow, thumbnail, thumbnail view, thumbnails, thumbs, responsive, watermarking, watermarks,fullscreen slider, lightbox, photography, sidebar, slide, youtube, vimeo, videos, instagram, mosaic 
 Requires at least: 3.4 
 Tested up to: 4.2 
-Stable tag: 1.2.23 
+Stable tag: 1.2.29 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -92,6 +92,7 @@ Upgrade to [WordPress Photo Gallery Pro](http://web-dorado.com/products/wordpres
 *   Masonry Album view   
 *   Slideshow/Lightbox 15 effects.    
 *   Editable themes.   
+*	Instagram Integration
 *   Commenting possibility with Captcha protection possibility.   
 *   Social sharing possibility (Facebook, Google+, Twitter, Pinterest and Tumblr)    
 *   Dynamic Photo Gallery Tag Cloud widget  with image tag cloud and text tag cloud options.   
@@ -205,6 +206,28 @@ Yes, it is possible to add advertising and/or watermark over the images. In both
 
 
 == Changelog ==
+
+= 1.2.29 = 
+Changed: Featured plugins page.  
+New: Featured themes page.   
+
+= 1.2.28 =
+change user guide links
+minor bug fixed
+
+= 1.2.27 =
+minor bug fixed
+
+= 1.2.26 =
+Fixed: Lightbox opening bug for ios.
+
+= 1.2.25 =
+Fixed: Lightbox opening bug for mobile browsers.
+
+= 1.2.24 = 
+duplicated id in slideshow view
+deprecated options removed (roles) 
+
 = 1.2.23 =
 bug in preload option fixed
 

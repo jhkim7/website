@@ -82,7 +82,7 @@ class Maskitto_Testimonials extends WP_Widget {
                             <div class="testimonials-image" style="background-image: url(<?php echo $image; ?>);"></div>
                             <div class="text-center"><?php echo maskitto_light_admin_edit(get_the_ID()); ?></div>
                             <div class="testimonials-text"><i><?php echo $quote; ?></i></div>
-                            <div class="testimonials-author"><?php the_title(); ?> / <?php echo $author_descr; ?></div>
+                            <div class="testimonials-author"><?php the_title(); ?><?php if(get_the_title() && $author_descr) echo ' / '; ?><?php echo $author_descr; ?></div>
                             <div class="testimonials-icon"><i class="fa fa-quote-right"></i></div>
                         </div>
 
@@ -176,7 +176,7 @@ class Maskitto_Testimonials extends WP_Widget {
         }
 
         if ( isset( $instance[ 'title' ] ) ) {
-            $subtitle = $instance[ 'title' ];
+            $title = $instance[ 'title' ];
         }
 
         if ( isset( $instance[ 'subtitle' ] ) ) {
