@@ -39,10 +39,10 @@ function moesia_nav_bar() {
 			echo '</div>';
 			// echo '<button class="menu-toggle"><i class="fa fa-bars"></i></button>
 			echo '<div id="nav-icon1" class="menu-toggle">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
 				<nav id="site-navigation" class="main-navigation col-sm-8" role="navigation">';
 				wp_nav_menu( array( 'theme_location' => 'primary' ) );
 			echo '</nav>';
@@ -63,3 +63,6 @@ if (get_theme_mod('moesia_menu_top', 0) == 0) {
 } else {
 	add_action('tha_header_before', 'moesia_nav_bar');
 }
+
+
+// if ( function_exists(siteorigin_panels_activate))

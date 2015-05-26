@@ -14,6 +14,10 @@ Template: moesia
  *									*
  *----------------------------------*/
 
+.top-bar {
+	background-color: #151515;	
+}
+
 #site-navigation {
 	padding-top: 25px;
 	font-size: 16px;
@@ -120,7 +124,7 @@ Template: moesia
 
 /*----------------------------------*
  *									*
- *		Header	 					*
+ *		Home: Header	 			*
  *									*
  *----------------------------------*/
 
@@ -148,6 +152,7 @@ Template: moesia
 	border-radius: 1px;
 	font-family: 'Lato';
 	letter-spacing: 1px;
+	background: #C1272D;
 }
 
 
@@ -156,6 +161,50 @@ Template: moesia
 }
 
 
+/*----------------------------------*
+ *									*
+ *		Home: Why us	 			*
+ *									*
+ *----------------------------------*/
+
+#services {
+	background: #EFEFEF;
+}
+
+.service-title {
+	color: #DB2F48;
+	padding-bottom: 30px;
+}
+
+.service-icon {
+	background: #C1272D;
+}
+
+.service-desc {
+	padding-top: 25px;
+}
+
+.service-line {
+	height: 1px;
+	background: #d82f47;
+	transition: width .5s ease;
+	width: 100px;	
+	margin: 25px auto 0 auto;
+}
+
+.service-link-custom {
+	text-decoration: none;
+	color: #333;
+}
+
+.service-link-custom:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+.service:hover .service-line {
+	width: 150px;
+}
 
 /*--------------------------------------------------------------
 Responsive
