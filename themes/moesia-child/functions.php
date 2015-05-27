@@ -65,4 +65,11 @@ if (get_theme_mod('moesia_menu_top', 0) == 0) {
 }
 
 
-// if ( function_exists(siteorigin_panels_activate))
+function widgets_pains() {
+	register_widget( 'some_widget');
+}
+
+add_action('widgets_init', 'widgets_pains');
+
+
+require get_stylesheet_directory() . "/widgets/fp-services.php";

@@ -1,11 +1,11 @@
 <?php
 
-class Moesia_Services extends WP_Widget {
+class some_widget extends WP_Widget {
 
 // constructor
-    function moesia_services() {
+    function some_widget() {
 		$widget_ops = array('classname' => 'moesia_services_widget', 'description' => __( 'Show what services you are able to provide.', 'moesia') );
-        parent::WP_Widget(false, $name = __('Moesia FP: Services', 'moesia'), $widget_ops);
+        parent::WP_Widget(false, $name = __('Moesia FP: Why Us', 'moesia'), $widget_ops);
 		$this->alt_option_name = 'moesia_services_widget';
 		
 		add_action( 'save_post', array($this, 'flush_widget_cache') );
@@ -97,7 +97,7 @@ class Moesia_Services extends WP_Widget {
 		ob_start();
 		extract($args);
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Our Services', 'moesia' );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Our Services', 'moesia' );		
 
 		/** This filter is documented in wp-includes/default-widgets.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
@@ -126,20 +126,22 @@ class Moesia_Services extends WP_Widget {
 					<?php $icon = get_post_meta( get_the_ID(), 'wpcf-service-icon', true ); ?>
 					<?php $link = get_post_meta( get_the_ID(), 'wpcf-service-link', true ); ?>
 					<div class="service col-md-4 col-sm-6 col-xs-6">
+						
+						<?php if($link) ; echo '<a href="' . esc_url($link) . '">'; ?>
+
+						<?php echo '<h4 class="service-title wow fadeInUp">' . get_the_title() . '</h4>'; ?>
 						<?php if ($icon) : ?>
 							<?php $icon_html = '<span class="service-icon wow zoomInDown">' . '<i class="fa ' . esc_html($icon) . '"></i>' . '</span>'; ?>
 							<?php echo apply_filters( 'services_widget_icon', $icon_html ); ?>
 						<?php endif; ?>
-						<?php $content_html = '<h4 class="service-title wow fadeInUp">';
-							if ($link) :
-								$content_html .= '<a href="' . esc_url($link) . '">' . get_the_title() . '</a>';
-							 else :
-								$content_html .= get_the_title();
-							endif;
-						$content_html .= '</h4>';
-						$content_html .= '<div class="service-desc wow fadeInUp">' . get_the_content() . '</div>';
+						<div class="service-line"></div>
+						<?php 
+						$content_html = '<div class="service-desc wow fadeInUp">' . get_the_content() . '</div>';
 						echo apply_filters( 'services_widget_content', $content_html );
 						?>
+
+						<?php if($link) ; echo '</a>'; ?>
+
 					</div>
 				<?php endwhile; ?>
 			</div>
