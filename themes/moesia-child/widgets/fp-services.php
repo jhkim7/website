@@ -139,7 +139,9 @@ class some_widget extends WP_Widget {
 						$content_html = '<div class="service-desc wow fadeInUp">' . get_the_content() . '</div>';
 						echo apply_filters( 'services_widget_content', $content_html );
 						?>
-
+						<div class="read-more-container">
+							<div class="why-read-more">Read More</div>
+						</div>
 						<?php if($link) ; echo '</a>'; ?>
 
 					</div>
