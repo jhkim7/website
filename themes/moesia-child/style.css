@@ -6,7 +6,12 @@ Template: moesia
 */
 
 /* write custom css */
-
+a:visited {
+ 	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
 .title-bottom-line {
 	height: 1px;
 	width: 100px;	
@@ -343,6 +348,9 @@ Template: moesia
 .entry-summary {
 	text-align: center;
 	padding-bottom: 35px;
+	font-family: 'open sans';
+	font-size: 15px;
+	color: #676767
 }
 
 .blog-read-more-container {
@@ -363,18 +371,14 @@ Template: moesia
 	padding: 7px 10px;
 	color: #d82f47;
 	visibility: hidden;
-	-webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;    
-	transition: all .5s;
+	-webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -o-transition: background .3s;    
+	transition: background .3s;
 }
 
 .blog-post:hover .blog-read-more {
 	visibility: visible;
-	-webkit-transition: visibility 1s ease;
-    -moz-transition: visibility 1s ease;
-    -o-transition: visibility 1s ease;    
-	transition: visibility 1s ease;
 }
 
 .all-news-custom {
@@ -403,6 +407,142 @@ Template: moesia
 	border: 1px solid #444;
 }
 
+
+
+/*footer*/
+
+
+.my-footer {
+	position: relative;
+	background-color: #222;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.footer-logo {
+	position: absolute;
+	width: 175px;
+	height: 60px;
+	top: 50%;
+	left: 16.67%;
+	margin-top: -30px;
+	margin-left: -87px;
+}
+
+.data-icon {
+	padding-right: 10px;
+	color: #d82f47;
+}
+
+.data-title {
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
+	display: block;
+	font-size: 14px;
+}
+
+.fortune-data ul {
+	padding: 0;
+}
+.fortune-data a {
+	text-decoration: none;
+}
+.fortune-data:hover a .data-content{
+	text-decoration: none; 
+	color: #9D9D9D;
+}
+
+.fortune-data .data-content{
+	font-size: 13px;
+	line-height: 26px;
+	color: #76767b;
+	text-align: left;
+	list-style: none;
+	-webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;    
+	transition: all .3s;
+}
+
+.md-padding {
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+.footer-facebook {
+	text-decoration: none;
+	color: #fff;
+}
+.footer-facebook i {
+	color: #3b5998;
+	font-size: 35px;
+	padding-bottom: 5px;
+	float: left;
+	-webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;    
+	transition: all .3s;
+}
+.footer-facebook:hover i{
+	color: #fff;
+}
+.footer-facebook:hover {
+	text-decoration: none;
+	color: #ddd;
+}
+.footer-facebook li {
+	list-style: none;
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.my-footer {
+		padding-left: 50%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.my-footer {
+		padding-left: 50%;
+	}
+	.footer-logo {
+		left: 25%;
+	}
+	.md-padding {
+		padding: 30px 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.my-footer {
+		padding-left: 0%;
+		padding-top: 80px;
+	}
+	.footer-logo {
+		left: 50%;
+		top: 25px;
+		margin-top: 0px;
+		text-align: center;
+	}
+	.fortune-data {
+		padding-left: 15px;
+		padding-top: 50px;
+		text-align: center;
+	}
+	.fortune-data .data-content li {
+		text-align: center;
+	}
+}
+
+/*@media only screen and (min-width: 1300px) {
+	.md-padding {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+}*/
 /*--------------------------------------------------------------
 Responsive
 --------------------------------------------------------------*/
