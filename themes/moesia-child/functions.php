@@ -66,10 +66,14 @@ if (get_theme_mod('moesia_menu_top', 0) == 0) {
 
 
 function widgets_pains() {
-	register_widget( 'some_widget');
+	register_widget('some_widget');
+	register_widget('fortune_testimonial');
+	register_widget('fortune_latest_news');
 }
 
 add_action('widgets_init', 'widgets_pains');
 
 
 require get_stylesheet_directory() . "/widgets/fp-services.php";
+require get_stylesheet_directory() . "/widgets/fp-testimonials.php";
+require get_stylesheet_directory() . "/widgets/fp-latest-news.php";

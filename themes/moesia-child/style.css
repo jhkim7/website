@@ -7,7 +7,13 @@ Template: moesia
 
 /* write custom css */
 
+.title-bottom-line {
+	height: 1px;
+	width: 100px;	
+	margin: 0px auto 60px auto;	
+	background: #d82f47;
 
+}
 /*----------------------------------*
  *									*
  *		Navigation 					*
@@ -157,7 +163,7 @@ Template: moesia
 
 
 .widget-title:after {
-	border-bottom: none !important;
+	border-bottom: none  !important;
 }
 
 
@@ -268,6 +274,135 @@ Template: moesia
 
 }
 
+
+/*----------------------------------*
+ *									*
+ *		Home: Testimonial 			*
+ *									*
+ *----------------------------------*/
+
+.testimonial-body-custom {
+	position: relative;
+	padding: 30px 30px 15px;
+}
+
+.customer-info { 
+	padding: 0 30px;
+}
+
+.customer-title {
+	font-weight: 600;
+}
+
+.fortune-rating {
+	text-align: center;
+	padding: 30px 0 0;
+}
+
+.stars {
+	font-size: 25px;
+	padding-bottom: 30px;
+}
+
+.rating-logos {
+	display: inline-block;
+}
+
+
+
+/*----------------------------------*
+ *									*
+ *		Home: Blog		 			*
+ *									*
+ *----------------------------------*/
+
+#latest-news {
+	background: #EFEFEF;
+}
+
+.entry-title-custom {
+	margin: 0;
+	padding: 15px 0 35px;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'open sans';
+}
+
+.entry-title-custom a {
+	text-decoration: none;
+	color: #4D4D4D;
+}
+
+.entry-thumb {
+	padding-bottom: 35px;
+	text-align:center;
+}
+
+.entry-summary {
+	text-align: center;
+	padding-bottom: 35px;
+}
+
+.blog-read-more-container {
+	text-align: center;
+	padding-bottom: 35px;
+}
+.blog-read-more-container a {
+	text-decoration: none;
+	color: #d82f47;
+}
+.blog-read-more-container a:hover{
+	background-color: #d82f47;
+	color: #fff;
+
+}
+.blog-read-more {
+	border: 1px solid #d82f47;
+	padding: 7px 10px;
+	color: #d82f47;
+	visibility: hidden;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;    
+	transition: all .5s;
+}
+
+.blog-post:hover .blog-read-more {
+	visibility: visible;
+	-webkit-transition: visibility 1s ease;
+    -moz-transition: visibility 1s ease;
+    -o-transition: visibility 1s ease;    
+	transition: visibility 1s ease;
+}
+
+.all-news-custom {
+	display: table;
+	margin: 50px auto 0;
+	padding: 10px 20px;
+	background: #444;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'open sans';
+	font-size: 16px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	color: #fff;
+	border: 1px solid #efefef;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.all-news-custom:hover {
+	text-decoration: none;
+	box-shadow: none;
+	color: #444;
+	background: #EFEFEF;
+	border: 1px solid #444;
+}
+
 /*--------------------------------------------------------------
 Responsive
 --------------------------------------------------------------*/
@@ -340,5 +475,5 @@ Responsive
 		margin-top: 0px;	
 	}
 
-
 }
+
