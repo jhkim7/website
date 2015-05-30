@@ -6,19 +6,20 @@ Template: moesia
 */
 
 /* write custom css */
-a:visited {
- 	text-decoration: none;
-}
-a:active {
-	text-decoration: none;
+body {
+	font-family: 'Lato' !important;
 }
 .title-bottom-line {
 	height: 1px;
 	width: 100px;	
 	margin: 0px auto 60px auto;	
 	background: #d82f47;
-
 }
+
+.single-projects .content-area {
+	width: 100%;
+}
+
 /*----------------------------------*
  *									*
  *		Navigation 					*
@@ -543,6 +544,138 @@ a:active {
 		padding-bottom: 90px;
 	}
 }*/
+
+
+
+/* Rooms */
+.project-image {
+	position: relative;
+	background-color: #ff6b53;
+}
+.project {
+	margin-bottom: 30px;
+}
+
+.room-title,
+.room-price	 {
+	top: 0;
+	position: absolute;
+	font-size: 20px;
+	color: #fff;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;	
+	opacity: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Open sans';
+}
+.room-title {
+	top: 20%;
+	opacity: 0;
+	width: 100%;
+	text-align: center;
+}
+.room-bottom-line {
+	height: 1px;
+	width: 100px;	
+	margin: 0px auto;
+	background: #fff;
+	transition: all 0.5s;
+}
+.room-bottom-line-container {
+	position:absolute;
+	opacity: 0;
+	width: 100%;
+	top: 40%;
+}
+.room-price {
+	top: 50%;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.room-view-container {
+	position: absolute;
+	width: 100%;
+	top: 70%;
+	opacity: 0;
+	text-align: center;
+}
+.room-view-container a {
+	text-decoration: none;
+	color: #fff;
+}
+.room-view-container a:hover {
+	color: #ff6b53;
+	background: #fff;
+	border-color: #fff;
+}
+.room-view {
+	text-align: center;
+	border: 1px solid;
+	font-size: 17px;
+	color: #fff;
+	transition: all 0.5s;
+	letter-spacing: 2px;
+	font-family: 'Open sans';
+	padding: 2px 8px;
+}
+
+.project-image img {
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;	
+}
+.project-image:hover > img {
+	opacity: 0.3;
+}
+.project-image:hover > .room-bottom-line-container {
+	opacity: 1;
+}
+.project-image:hover > .room-price {
+	opacity: 1;
+}
+.project-image:hover > .room-title {
+	opacity: 1;
+}
+.project-image:hover > .room-view-container {
+	opacity: 1;
+}
+
+
+
+
+@media (max-width: 620px) and (min-width: 498px)  {
+	.room-title {
+		font-size: 17px;
+	}
+	.room-price {
+		display: none;
+	}
+	.room-bottom-line-container {
+		display: none;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.room-title {
+		top: 25%;
+		font-size: 15px;
+	}
+	.room-price {
+		display: none;
+	}
+	.room-bottom-line-container {
+		display: none;
+	}
+}
+@media only screen and (max-device-width: 780px) {
+	.room-title,
+	.room-view-container {
+		opacity: 1;
+	}
+
+}
+
+
 /*--------------------------------------------------------------
 Responsive
 --------------------------------------------------------------*/
